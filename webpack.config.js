@@ -3,6 +3,8 @@ var path = require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+var dev = process.env.NODE_ENV !== 'PRODUCTION';
+
 module.exports = {
 	entry : {
 		app : './app'
@@ -10,7 +12,7 @@ module.exports = {
 
 	output : {
 	    filename : "js/[name].js",
-	    path : path.resolve('./build')
+	    path : dev ? './dist' : path.resolve('./build')
 	},
 
 	module : {
@@ -55,8 +57,8 @@ module.exports = {
 	        new webpack.optimize.DedupePlugin(),
 
 	        new HtmlWebpackPlugin({
-	            template: './_index.html',
-	            filename: 'index.html',
+	            template: './demo/demos.html',
+	            filename: 'demos.html',
 	            inject: 'body'
 	        })
 	    ];
@@ -70,7 +72,7 @@ module.exports = {
 	    port : 3202,
 	    progress: true,
 	    compress: true,
-	    quiet : false,
+	    quiet : true,
 	    noInfo : false,
 	    hot : true
 	}
