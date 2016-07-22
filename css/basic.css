@@ -17,6 +17,9 @@ h6, .kui-txt-tips { font-size: 12px; }
 .kui-txt-default { color: #000; }
 .kui-txt-info { color: #777; }
 .kui-txt-muted { color: #bbb; }
-.kui-txt-warning, .kui-txt-red { color: #ff4222; }
+.kui-txt-error, .kui-txt-red, em { color: #ff4222; }
 .kui-txt-feeds { color: #314c83; }
 .kui-txt-highlight {color: #ff8444; }
+a,a:hover { color:rgb(220, 20, 20); }
+
+
