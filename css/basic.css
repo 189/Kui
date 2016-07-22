@@ -23,3 +23,8 @@ h6, .kui-txt-tips { font-size: 12px; }
 a,a:hover { color:rgb(220, 20, 20); }
 
 
+
+/* 文本对齐 */
+.kui-txt-justify { text-align: justify;  }
+.kui-txt-justify-one { text-align: justify; overflow: hidden; height: 24px; }
+.kui-txt-justify-one:after { content: ''; display: inline-block;  height: 0; width: 100%; overflow: hidden; }
