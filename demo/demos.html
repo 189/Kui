@@ -5,23 +5,12 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Document</title>
 	<style>
-		.container {
-			padding : 0 10px;
-		}
-
-		section {
-			margin:10px 0;
-		}
-
-		.tit {
-			margin: 5px 0;
-			font-size: 16px;
-			color : #719e20;
-		}
-
-		.icon-list li { height: 100px; display: inline-block; width: 32.3%; text-align: center;  }
-		.icon-list li i { font-size: 24px;  }  
-
+		.container {padding : 0 10px; }
+		section {margin:10px 0; }
+		.tit {margin: 5px 0; font-size: 16px; color : #719e20; }
+		.icon-list li { height: 70px; display: inline-block; width: 32.3%; text-align: center;  }
+		.icon-list li i { font-size: 24px;  }
+		.border-list .item { width: 100px; margin: 10px auto; text-align: center; padding: 10px 0;  }  
 	</style>
 </head>
 <body>
@@ -127,7 +116,13 @@
 	            </li>
 			</ul>
 		</section>
-
+		<section class="border-list">
+			<div class="tit"> 1像素解决方案 </div>
+			<div class="item kui-border-t">上边框</div>
+			<div class="item kui-border-b">下边框</div>
+			<div class="item kui-border-l">左边框</div>
+			<div class="item kui-border-r">左边框</div>
+		</section>
 	</div>
 </body>
 </html>

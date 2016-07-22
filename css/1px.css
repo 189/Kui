@@ -1,0 +1,10 @@
+/* 1px 解决方案 */
+.kui-border-t { border-top:1px solid #ccc; }
+.kui-border-b { border-bottom: 1px solid #ccc; }
+.kui-border-l { border-left: 1px solid #ccc;  }
+.kui-border-r { border-right: 1px solid #ccc;  }
+.kui-border-tb { border: 1px solid #ccc; border-width: 1px 0; }
+
+@media screen and (-webkit-min-device-pixel-ratio:2){
+	
+}
