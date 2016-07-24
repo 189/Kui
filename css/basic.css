@@ -26,7 +26,5 @@ a,a:hover { color:rgb(220, 20, 20); }
 .kui-txt-justify-one { text-align: justify; overflow: hidden; height: 24px; }
 .kui-txt-justify-one:after { content: ''; display: inline-block;  height: 0; width: 100%; overflow: hidden; }
 
-/* 1px 解决方案 */
-
 
 
