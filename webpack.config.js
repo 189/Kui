@@ -57,8 +57,8 @@ module.exports = {
 	        new webpack.optimize.DedupePlugin(),
 
 	        new HtmlWebpackPlugin({
-	            template: './demo/demos.html',
-	            filename: 'demos.html',
+	            template: './demo/basic.html',
+	            filename: 'basic.html',
 	            inject: 'body'
 	        })
 	    ];
