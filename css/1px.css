@@ -1,0 +1,100 @@
+/* 1px 解决方案 */
+.kui-border-t { border-top:1px solid #000; }
+.kui-border-b { border-bottom: 1px solid #000; }
+.kui-border-l { border-left: 1px solid #000;  }
+.kui-border-r { border-right: 1px solid #000;  }
+.kui-border-tb { border: 1px solid #000; border-left: none; border-right: none; }
+.kui-border-lr { border: 1px solid #000; border-top: none; border-bottom: none;  }
+.kui-border-radius { border: 1px solid #000; border-radius: 4px;  }
+
+@media screen and (-webkit-min-device-pixel-ratio:2){
+	.kui-border-t,
+	.kui-border-b,
+	.kui-border-tb,
+	.kui-border-l,
+	.kui-border-r,
+	.kui-border-lr,
+	.kui-border,
+	.kui-border-radius { border: none; position: relative; background-repeat: no-repeat; }
+	
+	/* 上边框 */
+	.kui-border-t {
+		background-image: -webkit-linear-gradient(to bottom, #000 50%, transparent 100%);
+		background-image:         linear-gradient(to bottom, #000 50%, transparent 100%);
+		-webkit-background-size: 100% 1px;
+				background-size: 100% 1px;
+		background-position: left top;
+	}
+	
+	/* 下边框 */
+	.kui-border-b {
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+		background-image:         linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+		-webkit-background-size : 100% 1px;
+				background-size : 100% 1px;
+		background-position: left bottom;
+	}
+
+	/* 左边框  */
+	.kui-border-l {
+		background-image : -webkit-linear-gradient(to right, #000 0%, transparent 100%);
+		background-image :         linear-gradient(to right, #000 0%, transparent 100%);
+		-webkit-background-size : 1px 100%;
+				background-size: 1px 100%;
+		background-position: left top;
+	}
+
+	/* 右边框  */
+	.kui-border-r {
+		background-image : -webkit-linear-gradient(to left, #000 0%, transparent 100%);
+		background-image :         linear-gradient(to left, #000 0%, transparent 100%);
+		-webkit-background-size : 1px 100%;
+				background-size: 1px 100%;
+		background-position: right top;
+	}
+
+	/* 上下边框  */
+	.kui-border-tb {
+		background-image : -webkit-linear-gradient(to bottom, #000 0%, transparent 100%), -webkit-linear-gradient(to top, #000 0%, transparent 100%);
+		background-image :         linear-gradient(to bottom, #000 0%, transparent 100%),         linear-gradient(to top, #000 0%, transparent 100%);
+		-webkit-background-size : 100% 1px;
+				background-size: 100% 1px;
+		background-position: bottom,top;
+	}
+
+	/* 左右边框  */
+	.kui-border-lr {
+		background-image : -webkit-linear-gradient(to right, #000 0%, transparent 100%), -webkit-linear-gradient(to left, #000 0%, transparent 100%);
+		background-image :         linear-gradient(to right, #000 0%, transparent 100%),         linear-gradient(to left, #000 0%, transparent 100%);
+		-webkit-background-size : 1px 100%;
+				background-size: 1px 100%;
+		background-position: left,right;
+	}
+	
+	/* 全边框 蛋疼的4个渐变叠加 */
+	.kui-border {
+		background-image : -webkit-linear-gradient(to bottom, #000 0%, transparent 100%), -webkit-linear-gradient(to right, transparent 0%, #000 100%), -webkit-linear-gradient(to top, #000 0%, transparent 100%), -webkit-linear-gradient(to left, transparent 0%, #000 100%);
+		background-image :         linear-gradient(to bottom, #000 0%, transparent 100%),         linear-gradient(to right, transparent 0%, #000 100%),         linear-gradient(to top, #000 0%, transparent 100%),         linear-gradient(to left, transparent 0%, #000 100%);
+		-webkit-background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+		background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+		background-position: top, right, bottom, left;
+	}
+	
+	/* 圆角边框 造一个伪类 宽高为容器2倍 再 scale 缩小1倍 */
+	.kui-border-radius:before {
+		content: '';
+		position: absolute;
+		width: 200%;
+		height: 200%;
+		border-radius: 8px;
+		left : 0;
+		top: 0;
+		border: 1px solid #000;
+		pointer-events: none;
+		-webkit-transform: scale3d(.5, .5, .5);
+				transform: scale3d(.5, .5, .5);
+		-webkit-transform-origin: 0 0;
+		        transform-origin: 0 0;
+
+	}
+}
