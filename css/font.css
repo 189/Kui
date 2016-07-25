@@ -57,7 +57,6 @@
 
 .kui-icon-oder:before {
     content: "\e60b";
-<<<<<<< HEAD
 }
 
 .kui-icon-momeny:before {
@@ -84,34 +83,6 @@
     content: "\e606";
 }
 
-=======
-}
-
-.kui-icon-momeny:before {
-    content: "\e609";
-}
-
-.kui-icon-news:before {
-    content: "\e60a";
-}
-
-.kui-icon-date:before {
-    content: "\e607";
-}
-
-.kui-icon-from:before {
-    content: "\e608";
-}
-
-.kui-icon-check:before {
-    content: "\e605";
-}
-
-.kui-icon-confirm:before {
-    content: "\e606";
-}
-
->>>>>>> master
 .kui-icon-cam:before {
     content: "\e604";
 }

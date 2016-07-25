@@ -72,7 +72,7 @@ module.exports = {
 	    port : 3202,
 	    progress: true,
 	    compress: true,
-	    quiet : true,
+	    quiet : false,
 	    noInfo : false,
 	    hot : true
 	}
