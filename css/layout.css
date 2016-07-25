@@ -1,0 +1,100 @@
+/* Layout */
+
+.kui-tiled,
+.kui-center,
+.kui-divide {
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack : center;	
+			box-pack : center;	
+	-webkit-box-align : center;
+			box-align : center;
+}
+
+/* 平铺 */
+.kui-tiled li,
+.kui-divide li {
+	-webkit-box-flex : 1;
+			box-flex : 1;
+			text-align: center;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack : center;	
+			box-pack : center;	
+	-webkit-box-align : center;
+			box-align : center;
+	-webkit-box-orient : vertical;
+			box-orient : vertical;
+}
+
+.kui-tiled li span,
+.kui-divide li span {
+	font-size: 13px;	
+}
+
+/* 两侧分离 */
+.kui-divide li:first-of-type {
+	display: -webkit-box;
+	display: box;
+	margin-left: 10px;
+	-webkit-box-align:start;
+			box-align:start;
+}
+
+.kui-divide li:last-of-type {
+	margin-right: 10px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align:end;
+			box-align:end;
+}
+
+/* 居中对齐 */
+.kui-center {
+	text-align: center;
+}
+
+
+/* 伸缩布局 */
+.kui-flex {
+	display: -webkit-box;
+	display: box;
+	width: 100%;
+}
+/* 基于主轴 左对齐 */
+.kui-flex-pack-start {
+	-webkit-box-pack : start;
+			box-pack : start;
+}
+
+/* 基于主轴 中对齐 */
+.kui-flex-pack-center {
+	-webkit-box-pack : center;
+			box-pack : center;
+}
+
+/* 基于主轴 右对齐 */
+.kui-flex-pack-end {
+	-webkit-box-pack :  end;
+			box-pack :  end;
+}
+
+/* 基于侧轴 上对齐 */
+.kui-flex-align-start {
+	-webkit-box-align :  start;
+			box-align :  start;
+}
+
+/* 基于侧轴 中对齐 */
+.kui-flex-align-center {
+	-webkit-box-align :  center;
+			box-align :  center;
+}
+
+/* 基于侧轴 下对齐 */
+.kui-flex-align-end {
+	-webkit-box-align :  end;
+			box-align :  end;
+}
+
+

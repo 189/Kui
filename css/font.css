@@ -10,7 +10,7 @@
 
 [class^="kui-icon-"] {
     font-family: "miconfont" !important;
-    font-size: 14px;
+    font-size: 24px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
@@ -57,6 +57,7 @@
 
 .kui-icon-oder:before {
     content: "\e60b";
+<<<<<<< HEAD
 }
 
 .kui-icon-momeny:before {
@@ -83,6 +84,34 @@
     content: "\e606";
 }
 
+=======
+}
+
+.kui-icon-momeny:before {
+    content: "\e609";
+}
+
+.kui-icon-news:before {
+    content: "\e60a";
+}
+
+.kui-icon-date:before {
+    content: "\e607";
+}
+
+.kui-icon-from:before {
+    content: "\e608";
+}
+
+.kui-icon-check:before {
+    content: "\e605";
+}
+
+.kui-icon-confirm:before {
+    content: "\e606";
+}
+
+>>>>>>> master
 .kui-icon-cam:before {
     content: "\e604";
 }
@@ -101,4 +130,10 @@
 
 .kui-icon-home:before {
     content: "\e614";
+}
+
+/* 自定义字体图标 参考 FrozenUI 字体部分 */
+@font-face {
+    font-family: "fziconfont";
+    src: url(font/iconfont-full.ttf) format("truetype");
 }

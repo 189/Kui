@@ -5,12 +5,13 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Document</title>
 	<style>
-		.container {padding : 0 10px; }
+		.container {padding : 0 10px; padding-bottom: 50px; }
 		section {margin:10px 0; }
-		.tit {margin: 5px 0; font-size: 16px; color : #719e20; }
+		.tit {margin: 5px 0; font-size: 16px; color : #dc1414; }
 		.icon-list li { height: 70px; display: inline-block; width: 32.3%; text-align: center;  }
 		.icon-list li i { font-size: 24px;  }
-		.border-list .item { width: 100px; margin: 10px auto; text-align: center; padding: 10px 0;  }  
+		.border-list .item { width: 100px; margin: 10px auto; text-align: center; padding: 10px 0;  } 
+		.kui-flex { height: 50px; border: 1px solid #ccc; margin: 10px 0;  }
 	</style>
 </head>
 <body>
@@ -28,17 +29,17 @@
 		<section>
 			<div class="tit">颜色</div>
 			<div>默认颜色 #000</div>
-			<div class="kui-txt-info">次要颜色 #777</div>
-			<div class="kui-txt-muted">禁用状态色 如日期，input #bbb</div>
-			<div class="kui-txt-error">错误状态色 同 kui-txt-red</div>
-			<div class="kui-txt-highlight">高亮色 如关键字高亮</div>
+			<div class="kui-txt-info">次要颜色 kui-txt-info #777</div>
+			<div class="kui-txt-muted">禁用状态色 kui-txt-muted 如日期，input #bbb</div>
+			<div class="kui-txt-error">错误状态色 kui-txt-error 同 kui-txt-red</div>
+			<div class="kui-txt-highlight">高亮色 kui-txt-highlight 如关键字高亮</div>
 			<a href="javascript:;">链接色</a>
 			<em>em</em>
 		</section>
 		<section>
 			<div class="tit">文本对齐</div>
 			<div class="kui-txt-justify">普通文本两端对齐。一起去玩是一家专注于日本轻奢游的平台。</div>
-			<div class="kui-txt-justify-one">文本两端对齐</div>
+			<div class="kui-txt-justify-one">一起去玩轻奢游</div>
 		</section>
 		<section>
 			<div class="tit">图标</div>
@@ -126,6 +127,103 @@
 			<div class="item kui-border-lr">左右边框</div>
 			<div class="item kui-border">全边框</div>
 			<div class="item kui-border-radius">圆角边框</div>
+		</section>
+		<section>
+			<div class="tit">箭头链接</div>
+			<div class="kui-arrowlink">箭头链接 kui-arrowlink</div>
+		</section>
+		<section>
+			<div class="tit">文字截断</div>
+			<div class="kui-nowrap-one">单行折断.kui-nowrap-one 一起去玩是一家专注于日本轻奢游的网站,一起去玩是一家专注于日本轻奢游的网站</div>
+			<div class="kui-nowrap">多行折断.kui-nowrap 一起去玩是一家专注于日本轻奢游的网站,一起去玩是一家专注于日本轻奢游的网站</div>
+		</section>
+		<section>
+			<div class="tit">文字占位</div>
+			<div class="kui-placeholder">
+				<p>正在加载中...</p>
+			</div>
+		</section>
+		<section>
+			<div class="tit">平铺</div>
+			<ul class="kui-tiled">
+				<li><div>菜单1</div><span> 副标题</span></li>
+				<li><div>菜单2</div><span> 副标题</span></li>
+				<li><div>菜单3</div><span> 副标题</span></li>
+			</ul>
+		</section>
+		<section>
+			<div class="tit">两侧分离</div>
+			<ul class="kui-divide">
+				<li><div>菜单1</div><span> 副标题</span></li>
+				<li><div>菜单2</div><span> 副标题</span></li>
+			</ul>
+		</section>
+		<section>
+			<div class="tit">居中对齐</div>
+			<ul class="kui-center">
+				<li>我居中我自豪</li>
+			</ul>
+		</section>
+		<section>
+			<div class="tit">伸缩布局</div>
+			<ul class="kui-flex kui-flex-pack-start">
+				<li>主轴左</li>
+				<li>主轴左</li>
+			</ul>
+			<ul class="kui-flex kui-flex-pack-center">
+				<li>主轴中</li>
+				<li>主轴中</li>
+			</ul>
+			<ul class="kui-flex kui-flex-pack-end">
+				<li>主轴右</li>
+				<li>主轴右</li>
+			</ul>
+			<ul class="kui-flex kui-flex-align-start">
+				<li>侧轴上</li>
+				<li>侧轴上</li>
+			</ul>
+			<ul class="kui-flex kui-flex-align-center">
+				<li>侧轴中</li>
+				<li>侧轴中</li>
+			</ul>
+			<ul class="kui-flex kui-flex-align-end">
+				<li>侧轴下</li>
+				<li>侧轴下</li>
+			</ul>
+		</section>
+		<section>
+			<div class="tit"> switch 开关</div>
+			<form action="">
+				<div class="kui-form-item kui-form-item-switch">
+					<p>是否预定米其林餐厅 否</p>
+					<label class="kui-switch">
+						<input type="checkbox" />
+					</label>
+				</div>
+				<div class="kui-form-item kui-form-item-switch">
+					<p>是否预定米其林餐厅 是</p>
+					<label class="kui-switch">
+						<input type="checkbox" checked />
+					</label>
+				</div>
+			</form>
+		</section>
+		<section>
+			<div class="tit"> 单选</div>
+			<form action="">
+				<div class="kui-form-item kui-form-item-radio">
+					<label class="kui-radio">
+						<input type="radio" name="meal" checked />
+					</label>
+					<p>晚餐</p>
+				</div>
+				<div class="kui-form-item kui-form-item-radio">
+					<label class="kui-radio">
+						<input type="radio" name="meal" />
+					</label>
+					<p>午餐</p>
+				</div>
+			</form>
 		</section>
 	</div>
 </body>
