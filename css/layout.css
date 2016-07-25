@@ -54,3 +54,47 @@
 	text-align: center;
 }
 
+
+/* 伸缩布局 */
+.kui-flex {
+	display: -webkit-box;
+	display: box;
+	width: 100%;
+}
+/* 基于主轴 左对齐 */
+.kui-flex-pack-start {
+	-webkit-box-pack : start;
+			box-pack : start;
+}
+
+/* 基于主轴 中对齐 */
+.kui-flex-pack-center {
+	-webkit-box-pack : center;
+			box-pack : center;
+}
+
+/* 基于主轴 右对齐 */
+.kui-flex-pack-end {
+	-webkit-box-pack :  end;
+			box-pack :  end;
+}
+
+/* 基于侧轴 上对齐 */
+.kui-flex-align-start {
+	-webkit-box-align :  start;
+			box-align :  start;
+}
+
+/* 基于侧轴 中对齐 */
+.kui-flex-align-center {
+	-webkit-box-align :  center;
+			box-align :  center;
+}
+
+/* 基于侧轴 下对齐 */
+.kui-flex-align-end {
+	-webkit-box-align :  end;
+			box-align :  end;
+}
+
+

@@ -10,7 +10,8 @@
 		.tit {margin: 5px 0; font-size: 16px; color : #dc1414; }
 		.icon-list li { height: 70px; display: inline-block; width: 32.3%; text-align: center;  }
 		.icon-list li i { font-size: 24px;  }
-		.border-list .item { width: 100px; margin: 10px auto; text-align: center; padding: 10px 0;  }  
+		.border-list .item { width: 100px; margin: 10px auto; text-align: center; padding: 10px 0;  } 
+		.kui-flex { height: 50px; border: 1px solid #ccc; margin: 10px 0;  }
 	</style>
 </head>
 <body>
@@ -162,6 +163,61 @@
 			<ul class="kui-center">
 				<li>我居中我自豪</li>
 			</ul>
+		</section>
+		<section>
+			<div class="tit">伸缩布局</div>
+			<ul class="kui-flex kui-flex-pack-start">
+				<li>主轴左</li>
+				<li>主轴左</li>
+			</ul>
+			<ul class="kui-flex kui-flex-pack-center">
+				<li>主轴中</li>
+				<li>主轴中</li>
+			</ul>
+			<ul class="kui-flex kui-flex-pack-end">
+				<li>主轴右</li>
+				<li>主轴右</li>
+			</ul>
+			<ul class="kui-flex kui-flex-align-start">
+				<li>侧轴上</li>
+				<li>侧轴上</li>
+			</ul>
+			<ul class="kui-flex kui-flex-align-center">
+				<li>侧轴中</li>
+				<li>侧轴中</li>
+			</ul>
+			<ul class="kui-flex kui-flex-align-end">
+				<li>侧轴下</li>
+				<li>侧轴下</li>
+			</ul>
+		</section>
+		<section>
+			<div class="tit"> switch 开关</div>
+			<form action="">
+				<div class="kui-form-item kui-form-item-switch">
+					<p>是否预定米其林 否</p>
+					<label class="kui-switch">
+						<input type="checkbox" />
+					</label>
+				</div>
+				<div class="kui-form-item kui-form-item-switch">
+					<p>是否预定米其林 是</p>
+					<label class="kui-switch">
+						<input type="checkbox" checked />
+					</label>
+				</div>
+			</form>
+		</section>
+		<section>
+			<div class="tit"> 单选</div>
+			<form action="">
+				<div class="kui-form-item kui-form-item-radio">
+					<label class="kui-radio">
+						<input type="radio" />
+					</label>
+					<p>男</p>
+				</div>
+			</form>
 		</section>
 	</div>
 </body>
