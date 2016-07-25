@@ -53,4 +53,15 @@ a,a:hover { color:rgb(220, 20, 20); }
     overflow: hidden;
 }
 
+/* 文字占位 */
+.kui-placeholder { padding-top: 30px; position: relative; overflow: hidden; }
+.kui-placeholder>p {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    		box-pack : center;
+    -webkit-box-align : center;
+    		box-align : center;
+    		color: #bbb;
+}
+
 
