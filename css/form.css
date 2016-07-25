@@ -126,6 +126,7 @@
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 	border-radius: 100%;
+	cursor: pointer;
 }
 
 .kui-radio input:checked:after {
@@ -141,6 +142,7 @@
 	left: 50%;
 	box-sizing: border-box;
 	margin-left: -7px;
+	cursor: pointer;
 }
 
 
