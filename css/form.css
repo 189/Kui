@@ -14,6 +14,14 @@
 			box-align : center;
 }
 
+.kui-switch input,
+.kui-radio input,
+.kui-checkbox-s input,
+.kui-checkbox input {
+	border : none;
+	background : none;
+}
+
 /**
  * Switch 开关
  * input:before 半圆角白色底色
@@ -143,6 +151,63 @@
 	box-sizing: border-box;
 	margin-left: -7px;
 	cursor: pointer;
+}
+
+/**
+ * 复选框
+ * input:before 模拟选中
+ */
+
+.kui-checkbox-s,
+.kui-checkbox {
+	display: inline-block;
+	line-height: 24px;
+}
+
+.kui-checkbox-s input,
+.kui-checkbox input {
+	height: 1px;
+	width: 25px;
+	-webkit-appearance : none;
+			appearance : none;
+	position: relative;
+	vertical-align: middle;
+}
+
+.kui-checkbox-s input:before,
+.kui-checkbox input:before {
+	position: absolute;
+	font-family: fziconfont;
+	content: '\f610';
+	font-size: 30px;
+	line-height: 24px;
+	top: -12px;
+	left: -4px;
+	z-index: 3;
+	color: #ddd;
+	-webkit-font-smoothing : antialiased;
+	-webkit-text-stroke-width : .2px;
+	cursor: pointer;
+	pointer-events: none;
+}
+
+.kui-checkbox-s input:before {
+	content: '\f611';
+}
+
+
+.kui-checkbox input:checked:before,
+.kui-checkbox-s input:checked:before {
+	color: #dc1414;
+	content: '\f602';
+}
+
+.kui-checkbox input:before {
+	font-size: 30px;
+}
+
+.kui-checkbox input:checked:before {
+	content: '\f601';
 }
 
 
